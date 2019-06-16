@@ -3,7 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux'; /* code change */
+import { Provider } from 'react-redux';
 import shoppingListItemReducer from './reducers/shoppingListItemReducer.js';
 import App from './App';
 import './index.css';
@@ -13,8 +13,7 @@ const store = createStore(shoppingListItemReducer);
 ReactDOM.render(
     <Provider store={store}>
         {' '}
-        /* code change */
         <App />
-    </Provider> /* code change */,
+    </Provider>,
     document.getElementById('root')
 );
