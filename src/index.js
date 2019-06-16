@@ -12,7 +12,7 @@ const store = createStore(shoppingListItemReducer);
 
 ReactDOM.render(
     <Provider store={store}>
-        
+        {' '}
         /* code change */
         <App />
     </Provider> /* code change */,
